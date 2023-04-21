@@ -11,23 +11,8 @@ This project is a practice of deep linking using Firebase. Deep linking is a tec
 
 ## Screenshots
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
-  <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
-  <img alt="Home screen" src="https://res.cloudinary.com/deyoek1lq/image/upload/v1682074067/browser_c4kkhk.png" width="250" height="550"/>
-</picture>
+<img alt="Browser screen" src="https://res.cloudinary.com/deyoek1lq/image/upload/v1682074067/browser_c4kkhk.png"  width="250" height="550" /> <img style="margin-right: 30px"  src="https://res.cloudinary.com/deyoek1lq/image/upload/v1682074064/screen_home_svsppo.png" alt="Home screen" width="250" height="550" /> <img alt="Share screen" src="https://res.cloudinary.com/deyoek1lq/image/upload/v1682074063/share_link_f2ptcu.png"  width="250" height="550" /> 
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
-  <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
-  <img alt="Share screen" src="YOUR-DEFAULT-IMAGE">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
-  <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
-  <img alt="Browser screen" src="YOUR-DEFAULT-IMAGE">
-</picture>
 
 ## How to use
 
@@ -46,6 +31,13 @@ To use this project, you need to have Android Studio and Firebase account. Follo
 
 This project uses the following plugins:
 
+  firebase_core: ^2.10.0
+  
+  firebase_dynamic_links:
+  
+  share_plus: ^6.3.2
+  
+  # Useages 
 - firebase_core: A Flutter plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.
 - firebase_dynamic_links: A Flutter plugin to use the Firebase Dynamic Links API, which enables creating and receiving links across multiple platforms.
 - provider: A Flutter plugin that provides a simple and effective way to manage state in your app using the provider pattern.

@@ -1,16 +1,42 @@
-# deep_linking_repo
+# Firebase Deep Linking
 
-A new Flutter project.
+This project is a practice of deep linking using Firebase. Deep linking is a technique that allows you to create links that direct users to specific content within your app. With Firebase Dynamic Links, you can create smart links that work across multiple platforms and provide the best user experience.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Share a screen as a link
+- Share the link to social media platforms
+- Open the app if it's already installed or go to the Play Store if not
+- Show different images depending on the user's theme preference
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
+  <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
+  <img alt="Home screen" src="YOUR-DEFAULT-IMAGE">
+</picture>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
+  <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
+  <img alt="Share screen" src="YOUR-DEFAULT-IMAGE">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
+  <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
+  <img alt="Browser screen" src="YOUR-DEFAULT-IMAGE">
+</picture>
+
+## How to use
+
+To use this project, you need to have Android Studio and Firebase account. Follow these steps:
+
+1. Clone this repository and open it in Android Studio.
+2. Create a Firebase project and register your app.
+3. Add the Firebase Dynamic Links SDK to your app.
+4. Configure your app to handle incoming links.
+5. Build and run your app on a device or emulator.
+6. Tap the share button on the home screen to generate and share a link.
+7. Tap the link on another device or browser to open the app or the Play Store.

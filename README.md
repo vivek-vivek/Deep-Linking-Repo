@@ -14,7 +14,7 @@ This project is a practice of deep linking using Firebase. Deep linking is a tec
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
   <source media="(prefers-color-scheme: light)" srcset="YOUR-LIGHTMODE-IMAGE">
-  <img alt="Home screen" src="YOUR-DEFAULT-IMAGE">
+  <img alt="Home screen" src="https://res.cloudinary.com/deyoek1lq/image/upload/v1682074067/browser_c4kkhk.png" width="250" height="550"/>
 </picture>
 
 <picture>
@@ -40,3 +40,13 @@ To use this project, you need to have Android Studio and Firebase account. Follo
 5. Build and run your app on a device or emulator.
 6. Tap the share button on the home screen to generate and share a link.
 7. Tap the link on another device or browser to open the app or the Play Store.
+
+
+## Dependencies
+
+This project uses the following plugins:
+
+- firebase_core: A Flutter plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.
+- firebase_dynamic_links: A Flutter plugin to use the Firebase Dynamic Links API, which enables creating and receiving links across multiple platforms.
+- provider: A Flutter plugin that provides a simple and effective way to manage state in your app using the provider pattern.
+- share_plus: A Flutter plugin that allows you to share text, images, or files with other apps installed on the device.

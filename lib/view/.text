@@ -1,0 +1,50 @@
+
+/*
+import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
+import 'package:share_plus/share_plus.dart';
+
+class LInk {
+  /// creating a  [dynamic lnnk ]
+  Future<String> createDynamicLink({required String screen}) async {
+    final fbLink = FirebaseDynamicLinks.instance;
+    //exaple link
+    final url = 'https://www.deeplinkrepo.com/$screen';
+
+    //  requirements of a dynamic link
+    final DynamicLinkParameters parameters = DynamicLinkParameters(
+      link: Uri.parse(url),
+      uriPrefix: 'https://deeplinkrepo.page.link',
+      androidParameters: const AndroidParameters(
+        packageName: 'com.example.deep_linking_repo',
+        minimumVersion: 1,
+      ),
+      googleAnalyticsParameters: const GoogleAnalyticsParameters(
+        source: "twitter",
+        medium: "social",
+        campaign: "example-promo",
+      ),
+      socialMetaTagParameters: SocialMetaTagParameters(
+        title: "Example of a Dynamic Link",
+        imageUrl: Uri.parse(
+            "https://i.pinimg.com/originals/68/b5/0e/68b50ea0e2a9e3c11ab34b6b795c2953.png"),
+      ),
+    );
+
+    // creating a short link
+    final ShortDynamicLink dynamicLink =
+        await fbLink.buildShortLink(parameters);
+
+    final Uri shortUrl = dynamicLink.shortUrl;
+
+    return shortUrl.toString();
+  }
+
+// share button
+  Future shareLink({required String screen}) async {
+    final dynamicLink = await createDynamicLink(screen: screen);
+    Share.share(dynamicLink, subject: "share this link to see a dynamic link");
+    return;
+  }
+}
+
+*/
